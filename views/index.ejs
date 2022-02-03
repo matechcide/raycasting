@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <canvas class="fond" id="fond" height="800" width="1200"></canvas>
+        <canvas class="canvas" id="canvas" height="675" width="1200"></canvas>
+        <canvas class="sprite" id="sprite" height="675" width="1200"></canvas>
+        <script src="/public/js/main.js"></script>
+        <script src="/public/js/loadImages.js"></script>
+        <script src="/public/js/murs.js"></script>
+        <script src="/public/js/lutin.js"></script>
+        <script src="/public/js/rayCasting.js"></script>
+        <script src="/public/js/moov.js"></script>
+        <label>Utiliser les touches ZQSD et les flèches directionnel pour vous déplacer.</label>
+
+        <style>
+            .canvas{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0px);
+                -ms-transform: translate(50%, 0px);
+            }
+            .fond{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0px);
+                -ms-transform: translate(50%, 0px);
+            }
+            .sprite{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0px);
+                -ms-transform: translate(50%, 0px);
+            }
+            label{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0px);
+                -ms-transform: translate(50%, 0px);
+                top: 700px;
+                font-size: 30px;
+            }
+        </style>
+    </body>
+</html>
